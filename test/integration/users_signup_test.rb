@@ -17,7 +17,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template 'users/new'
     assert_select 'div#error_explanation' do
       assert_select 'ul' do
-	assert_select 'li', 4
+	assert_select 'li', 4 
       end
     end
   end
