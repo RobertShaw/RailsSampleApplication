@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
  
   resources :users  
+  resources :account_activations, only: [:edit]
 
   get '/help', to: 'static_pages#help', as: 'help'
 
